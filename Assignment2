@@ -1,0 +1,20 @@
+--1)Create a Database and Table Within the Cloud SQL Instance
+CREATE DATABASE dataset;
+USE dataset;
+CREATE TABLE Project (Developers VARCHAR(20), quantity NUMBER);
+--2)Insert query
+INSERT dataset.Project (Developers, quantity)
+VALUES('Front end Developers', 10),
+      ('Backend  Developers', 20),
+      ('Testers', 30),
+      ('TeamLeader', 2),
+      ('Project Manager', 20),
+      ('QA', 30),
+--3)Update
+ UPDATE dataset.Project
+SET quantity = quantity + 10
+WHERE Developers like '%Frontend Developers%';
+--4)Select
+ SELECT * FROM dataset.Project WHERE quantity in (10,20,30);
+--5)Delete
+ DELETE dataset.Project WHERE quantity = 2;
