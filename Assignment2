@@ -9,7 +9,7 @@ VALUES('Front end Developers', 10),
       ('Testers', 30),
       ('TeamLeader', 2),
       ('Project Manager', 20),
-      ('QA', 30),
+      ('QA', 30);
 --3)Update
  UPDATE niveus.Project
 SET quantity = quantity + 10
