@@ -1,16 +1,15 @@
-package com.example.Assignment1;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Assignment1Application {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Assignment1Application.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 		String s="Hello World";
-		System.out.println("Name of the program:"+s);
-		
+		System.out.println(s);
 	}
 
 }
